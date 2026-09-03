@@ -175,7 +175,7 @@
                   "severity": "High",
                   "type": "Spoofing",
                   "description": "Threat actors impersonate legitimate users to\ngain unauthorized access",
-                  "mitigation": "",
+                  "mitigation": "-Implement strong multi-factor authentication (MFA) mechanisms to verify user identities\n-Use CAPTCHA to prevent automated attacks\n-Regularly update authentication tokens",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
@@ -183,18 +183,11 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
             },
-            "children": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "children": []
           },
           {
             "position": {
@@ -1102,7 +1095,7 @@
                   "severity": "High",
                   "type": "Information disclosure",
                   "description": "Sensitive data is intercepted or exposed during\ntransmission",
-                  "mitigation": "",
+                  "mitigation": "-Use encryption for data in transit\n-Avoid sending sensitive data in URL parameters\n-Restrict access to authorized personnel only n URL parameters",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
@@ -1112,7 +1105,7 @@
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -1486,7 +1479,7 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Attackers manipulate HTTP requests",
-                  "mitigation": "",
+                  "mitigation": "-Implement input validation and output encoding\n-Use web application firewalls (WAFs)\n-Follow secure coding practices",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
@@ -1495,7 +1488,7 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1558,7 +1551,7 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Attackers manipulate HTTP responses",
-                  "mitigation": "",
+                  "mitigation": "-Implement input validation and output encoding\n-Use web application firewalls (WAFs)\n-Follow secure coding practices",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
@@ -1567,7 +1560,7 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1846,7 +1839,7 @@
                   "severity": "High",
                   "type": "Tampering",
                   "description": "Attackersmodify or manipulate stored data",
-                  "mitigation": "",
+                  "mitigation": "-Use encryption to protect data at rest\n-Employ integrity checks to detect tampering\n-Restrict access to authorized personnel only",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 12,
@@ -1854,7 +1847,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
