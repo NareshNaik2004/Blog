@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "a30cc1b3-fbd1-4c08-a815-b000f8eead0d",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Website Dev",
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +242,6 @@
               ]
             },
             "id": "acbf2a37-8af2-47d8-9ff9-caa3a5bf3c30",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Visitor",
@@ -275,6 +275,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -358,7 +359,6 @@
               ]
             },
             "id": "0adb5d22-5c8f-4978-85c9-6d397d3282b0",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -392,6 +392,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -475,7 +476,6 @@
               ]
             },
             "id": "21cc0427-27cb-44bb-bf67-9f3270130b4b",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Public website",
@@ -512,6 +512,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -595,7 +596,6 @@
               ]
             },
             "id": "4c831e81-8aca-4c38-83e0-be2a74af56f2",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Authentication",
@@ -632,6 +632,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -715,7 +716,6 @@
               ]
             },
             "id": "a8b8665f-4bcb-4299-b02d-51a022ed7e37",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Transactions",
@@ -1483,6 +1483,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1566,7 +1567,6 @@
               ]
             },
             "id": "6f52849d-307b-4146-9ab0-af844808e91c",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Public Webpage",
@@ -1607,6 +1607,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1690,7 +1691,6 @@
               ]
             },
             "id": "9abc085c-22c3-4749-96b0-22c62b552b96",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Authentication \nDatabase",
@@ -1731,6 +1731,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1814,7 +1815,6 @@
               ]
             },
             "id": "a6a93f86-4f06-4e17-8fa4-22fb49ed1d64",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Transaction \nDatabase",
@@ -1885,13 +1885,19 @@
             ],
             "id": "134f5cc4-8e19-472e-9a4e-6e41715ebfd4",
             "source": {
-              "x": 1040,
+              "x": 980,
               "y": -120
             },
             "target": {
-              "x": 1060,
-              "y": 700
-            }
+              "x": 990,
+              "y": 720
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 150
+              }
+            ]
           }
         ],
         "description": "E Bank stride"
